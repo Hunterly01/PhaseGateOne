@@ -2,11 +2,15 @@ import java.util.Scanner;
 public class MenstrualApp{
 public static void main (String [] args){
 Scanner input = new Scanner(System.in);
-while(true){
+boolean hunterly = true;
+while(hunterly){
 System.out.println(""" 
 			 WELCOME TO MENSTRUAL CYCLE APP
 			
-			1.Calculate safe periods			
+			Choose your option
+			1.Calculate safe periods
+			2.Calculate ovulation day
+			0.Exit			
 			""");
 int option = input.nextInt();
 switch(option){
@@ -14,7 +18,14 @@ switch(option){
 		int userInput = input.nextInt();
 		calculateSafePeriods(userInput);
 		break;
-
+	case 2: System.out.println("Enter your cycle Length:");
+		int userInput2 = input.nextInt();
+		CalculateOvulationDay(userInput2);
+		break;
+	case 0:
+	hunterly = false;
+	System.out.print("bye bye");
+	break;
 
 }
 }
@@ -27,6 +38,10 @@ System.out.println("first safe period: Day 1 to " + firstSafePeriod);
 System.out.println("second safe period: Day " + secondSafePeriodStart + " to " + secondSafePeriodEnd);
 
 }
-}
 
+public static void CalculateOvulationDay(int CycleLength){
+ int result = CycleLength - 14;
+ System.out.println("your ovulation day is " + result);
+}
+}
 

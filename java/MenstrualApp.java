@@ -10,6 +10,7 @@ System.out.println("""
 			Choose your option
 			1.Calculate safe periods
 			2.Calculate ovulation day
+			3.Calculate next period day
 			0.Exit			
 			""");
 int option = input.nextInt();
@@ -22,6 +23,12 @@ switch(option){
 		int userInput2 = input.nextInt();
 		CalculateOvulationDay(userInput2);
 		break;
+	case 3: System.out.println("Enter your cycle Length and Last period day:");
+		int userInput3 = input.nextInt();
+		int userInput4 = input.nextInt();
+		CalculateNextPeriodDay(userInput3, userInput4);
+		break;
+		
 	case 0:
 	hunterly = false;
 	System.out.print("bye bye");
@@ -43,5 +50,12 @@ public static void CalculateOvulationDay(int CycleLength){
  int result = CycleLength - 14;
  System.out.println("your ovulation day is " + result);
 }
+
+public static void CalculateNextPeriodDay(int CycleLength, int LastPeriodDay){
+int nextPeriodDay = LastPeriodDay +  CycleLength;
+System.out.println("next Period Day is " + nextPeriodDay);
+}
+
+
 }
 

@@ -33,6 +33,8 @@ switch(option){
 	hunterly = false;
 	System.out.print("bye bye");
 	break;
+	
+	default: System.out.println("invalid input.. try again");
 
 }
 }

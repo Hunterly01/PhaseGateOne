@@ -22,6 +22,7 @@ String addItem = "Yes";
 double piece = 0;
 double unit = 0;
 double total = 1; 
+double subTotal = 0;
 while(!addItem.equals("NO")){
 System.out.println("What did the user buy? ");
 String product = input.next();
@@ -62,13 +63,12 @@ System.out.println("============================================================
 System.out.println("ITEM\tPRICE\tQTY\tTotal(NGN)");
 System.out.println("-----------------------------------------------------------------");
 for(int counter = 0; counter < unitList.size(); counter++){
+	subTotal += unitList.get(counter) * pieceList.get(counter);
 
 System.out.println(itemList.get(counter) + "\t" + unitList.get(counter) + "\t" + pieceList.get(counter) + "\t" + totalList.get(counter));
 }
 System.out.println("-----------------------------------------------------------------");
-
-
-
+System.out.println("subTotal:" + subTotal);
 
 
 

@@ -48,7 +48,7 @@ pieceList.add(piece);
 
 System.out.println("enter discount ");
 double discount = input.nextDouble();
-double discountPrice = (discount / 100) * discount;
+
 
 double disForCustomer = total - discount;
 
@@ -69,15 +69,49 @@ System.out.println(itemList.get(counter) + "\t" + unitList.get(counter) + "\t" +
 }
 System.out.println("-----------------------------------------------------------------");
 System.out.println("subTotal:" + subTotal);
+double discountPrice = (discount / 100) * subTotal;
+System.out.println("Discount: " + discountPrice);
+double VAT = (17.50 / 100) * subTotal;
+System.out.println("VAT @17.50 : " + VAT);
+double billTotal = (subTotal - discountPrice) + VAT;
+System.out.println("=================================================================");
+System.out.println("Bill Total : " + billTotal);
+System.out.println("=================================================================");
+System.out.println("THIS IS NOT A RECEIPT KINDLY PAY " + billTotal);
+System.out.println("=================================================================");
 
 
+System.out.println("enter amount paid ");
+double amountPaid = input.nextDouble();
 
 
+System.out.println("SEMICOLON STORES");
+System.out.println("MAIN BRANCH");
+System.out.println("LOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS.");
+System.out.println("TEL: 03293828343");
+System.out.println("Date: " + date);
+System.out.println("Cashier: " + cashiersName);
+System.out.println("Customer Name: " + name);
+System.out.println("=================================================================");
+System.out.println("ITEM\tPRICE\tQTY\tTotal(NGN)");
+System.out.println("-----------------------------------------------------------------");
+for(int counter = 0; counter < unitList.size(); counter++){
+	subTotal += unitList.get(counter) * pieceList.get(counter);
 
-
-
-
-
+System.out.println(itemList.get(counter) + "\t" + unitList.get(counter) + "\t" + pieceList.get(counter) + "\t" + totalList.get(counter));
+}
+System.out.println("-----------------------------------------------------------------");
+System.out.println("subTotal:" + subTotal);
+System.out.println("Discount: " + discountPrice);
+System.out.println("VAT @17.50 : " + VAT);
+System.out.println("=================================================================");
+System.out.println("Bill Total : " + billTotal);
+System.out.println("Amount paid: " + amountPaid);
+double balance = amountPaid - billTotal;
+System.out.println("balance: " + balance);
+System.out.println("=================================================================");
+System.out.println("THANK YOU FOR YOUR PATRONAGE");
+System.out.println("=================================================================");
 
 }
 }

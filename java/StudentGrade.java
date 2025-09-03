@@ -32,16 +32,41 @@ for(int count = 0; count < studentNumber; count++){
 System.out.println("Saving <<<<<<<<<<<<<<<<<<<<<");
 System.out.println("Saved Sucessfully");
 
-System.out.println("============================================");
+int[] totalScores = new int[studentNumber];
+double[] averageScores = new double[studentNumber];
+for(int count = 0; count < studentNumber; count++){
+	for(int counter = 0; counter < subjectNumber; counter++){
+		totalScores[count] += studentScores[count][counter];
+		}
+	averageScores[count] = totalScores[count] / subjectNumber;
+}
+	int [] positions = new int[studentNumber];
+for(int count = 0; count < studentNumber; count++){
+positions[count] = 1;
+for(int counter = 0; counter < subjectNumber; counter++){
+if (totalScores[count] < totalScores[counter]){
+	positions[count]++;
+
+}
+}
+}
+System.out.println("==========================================================");
 System.out.print("STUDENT " + "\t" + "\t");
 for(int index = 0; index < subjectNumber; index++){
 	System.out.print("SUB" + (index + 1) + "\t");
 }
 
-System.out.print("TOT" + "\t" + "AVE" + "\t" + "POS");
-
-
-
+System.out.println("TOT\tAVE\tPOS");
+System.out.println("===========================================================");
+   for (int count = 0; count < studentNumber; count++) {
+	System.out.print("Student" + (count + 1) + "\t\t");
+	for (int counter = 0; counter < subjectNumber; counter++){
+		System.out.print(studentScores[count][counter] + "\t");
+	
+}
+System.out.println(totalScores[count] + "\t" + String.format("%.2f", averageScores[count]) + "\t" + positions[count]);
+}
+System.out.println("===========================================================");
 
 }
 }

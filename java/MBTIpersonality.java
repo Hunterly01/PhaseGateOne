@@ -114,5 +114,54 @@ if (judging >= perceiving) {
             System.out.println(question[count] + " → " + response[count]);
         }
       System.out.println("your MBTI test result is " + mbti);
+
+if (mbti.equals("INTJ")){
+	System.out.println("INNOVATIVE,INDEPENDENT,STRATEGIC,LOGICAL.RESERVED,INSIGHTFUL,Driven by their own original ideas to achieve improvement.");
+}
+if (mbti.equals("INTP")){
+	System.out.println("Intellectual,Logical,Precise,Curious,Challenging,Independent,They create innovative solutions to problems.");
+}
+if (mbti.equals("ENTJ")){
+	System.out.println("STRATEGIC, LOGICAL, EFFICIENT, OUTSPOKEN, AMBITIOUS, INDEPENDENT. They are natural leaders and long-range planners.");
+}
+if (mbti.equals("ENTP")){
+	System.out.println("INVENTIVE, ENTHUSIASTIC, STRATEGIC, ENTERPRISING, INQUISITIVE, VERSATILE. They enjoy new ideas and challenges, value innovation.");
+}
+if (mbti.equals("INFJ")){
+	System.out.println("ADVOCATE, ORGANIZED, INSIGHTFUL, DEPENDABLE, COMPASSIONATE, GENTLE. They seek harmony and cooperation, and enjoy intellectual stimulation.");
+}
+if (mbti.equals("INFP")){
+	System.out.println("SINCERE, CREATIVE, IDEALISTIC, PERCEPTIVE, CARING, LOYAL. They value inner harmony and personal growth, focus on dreams and possibilities.");
+}
+if (mbti.equals("ENFJ")){
+	System.out.println("CARING, ENTHUSIASTIC, IDEALISTIC, ORGANIZED, DIPLOMATIC, RESPONSIBLE. They are skilled communicators and focus on others.");
+}
+if (mbti.equals("ENFP")){
+	System.out.println("ENTHUSIASTIC, CREATIVE, SPONTANEOUS, OPTIMISTIC, SUPPORTIVE, PLAYFUL. They value inspiration and enjoy starting new projects.");
+}
+if (mbti.equals("ISTJ")){
+	System.out.println("SERIOUS, LOGICAL, RESPONSIBLE, ORGANIZED, SENSIBLE, REALISTIC. They are thorough and dependable.");
+}
+if (mbti.equals("ISFJ")){
+	System.out.println("WARM, CONSIDERATE, GENTLE, RESPONSIBLE, HELPFUL, HARDWORKING. They are loyal and value traditions.");
+}
+if (mbti.equals("ESTJ")){
+	System.out.println("EFFICIENT, OUTGOING, ANALYTICAL, SYSTEMATIC, DEPENDABLE, ASSERTIVE. They focus on getting things done in an orderly fashion.");
+}
+if (mbti.equals("ESFJ")){
+	System.out.println("FRIENDLY, OUTGOING, RELIABLE, CONSCIENTIOUS, ORGANIZED, PRACTICAL. They seek to be helpful and please others.");
+}
+if (mbti.equals("ISTP")){
+	System.out.println("ACTION-ORIENTED, LOGICAL, ANALYTICAL, ADVENTUROUS, INDEPENDENT. They enjoy understanding how things work.");
+}
+if (mbti.equals("ISFP")){
+	System.out.println("SENSITIVE, KIND, FRIENDLY, OUTGOING, FLEXIBLE, ARTISTIC. They enjoy helping people in tangible ways.");
+}
+if (mbti.equals("ESTP")){
+	System.out.println("ENERGETIC, ACTIVE, FRIENDLY, ADAPTABLE, OUTGOING, PRAGMATIC. They enjoy solving problems in the moment.");
+}
+if (mbti.equals("ESFP")){
+	System.out.println("FRIENDLY, OUTGOING, SPONTANEOUS, FLEXIBLE, ENTHUSIASTIC, PLAYFUL. They enjoy helping people in tangible ways.");
+}
 }
 }

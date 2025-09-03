@@ -99,10 +99,57 @@ if (judging >= perceiving) {
 
       console.log(name + "Here are you selected :");
         for (let count = 0; count < response.length; count++) {
-            console.log(question[count] + " → " + response[count]);
+            console.log(question[count] + " -> " + response[count]);
         }
       console.log("your MBTI test result is " + mbti);
 
-
+if (mbti == "INTJ"){
+	console.log("INNOVATIVE,INDEPENDENT,STRATEGIC,LOGICAL.RESERVED,INSIGHTFUL,Driven by their own original ideas to achieve improvement.");
+}
+if (mbti == "INTP"){
+	console.log("Intellectual,Logical,Precise,Curious,Challenging,Independent,They create innovative solutions to problems.");
+}
+if (mbti == "ENTJ"){
+	console.log("STRATEGIC, LOGICAL, EFFICIENT, OUTSPOKEN, AMBITIOUS, INDEPENDENT. They are natural leaders and long-range planners.");
+}
+if (mbti == "ENTP"){
+	console.log("INVENTIVE, ENTHUSIASTIC, STRATEGIC, ENTERPRISING, INQUISITIVE, VERSATILE. They enjoy new ideas and challenges, value innovation.");
+}
+if (mbti =="INFJ"){
+	console.log("ADVOCATE, ORGANIZED, INSIGHTFUL, DEPENDABLE, COMPASSIONATE, GENTLE. They seek harmony and cooperation, and enjoy intellectual stimulation.");
+}
+if (mbti == "INFP"){
+	console.log("SINCERE, CREATIVE, IDEALISTIC, PERCEPTIVE, CARING, LOYAL. They value inner harmony and personal growth, focus on dreams and possibilities.");
+}
+if (mbti == "ENFJ"){
+	console.log("CARING, ENTHUSIASTIC, IDEALISTIC, ORGANIZED, DIPLOMATIC, RESPONSIBLE. They are skilled communicators and focus on others.");
+}
+if (mbti == "ENFP"){
+	console.log("ENTHUSIASTIC, CREATIVE, SPONTANEOUS, OPTIMISTIC, SUPPORTIVE, PLAYFUL. They value inspiration and enjoy starting new projects.");
+}
+if (mbti == "ISTJ"){
+	console.log("SERIOUS, LOGICAL, RESPONSIBLE, ORGANIZED, SENSIBLE, REALISTIC. They are thorough and dependable.");
+}
+if (mbti == "ISFJ"){
+	console.log("WARM, CONSIDERATE, GENTLE, RESPONSIBLE, HELPFUL, HARDWORKING. They are loyal and value traditions.");
+}
+if (mbti == "ESTJ"){
+	console.log("EFFICIENT, OUTGOING, ANALYTICAL, SYSTEMATIC, DEPENDABLE, ASSERTIVE. They focus on getting things done in an orderly fashion.");
+}
+if (mbti == "ESFJ"){
+	console.log("FRIENDLY, OUTGOING, RELIABLE, CONSCIENTIOUS, ORGANIZED, PRACTICAL. They seek to be helpful and please others.");
+}
+if (mbti == "ISTP"){
+	console.log("ACTION-ORIENTED, LOGICAL, ANALYTICAL, ADVENTUROUS, INDEPENDENT. They enjoy understanding how things work.");
+}
+if (mbti == "ISFP"){
+	console.log("SENSITIVE, KIND, FRIENDLY, OUTGOING, FLEXIBLE, ARTISTIC. They enjoy helping people in tangible ways.");
+}
+if (mbti == "ESTP"){
+	console.log("ENERGETIC, ACTIVE, FRIENDLY, ADAPTABLE, OUTGOING, PRAGMATIC. They enjoy solving problems in the moment.");
+}
+if (mbti == "ESFP"){
+	console.log("FRIENDLY, OUTGOING, SPONTANEOUS, FLEXIBLE, ENTHUSIASTIC, PLAYFUL. They enjoy helping people in tangible ways.");
+}
 
                   
